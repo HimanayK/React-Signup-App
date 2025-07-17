@@ -52,21 +52,25 @@ const Login = () => {
                 <div className='icon'><FontAwesomeIcon icon={faEnvelope} /></div>
                 <input type="email" placeholder='Email Id' 
                 value={email} 
-                onChange={(e)=> setEmail(e.target.value)} />
+                onChange={(e)=> setEmail(e.target.value)}
+                autoComplete="off"   // ✅ disables browser autofill
+               />
             </div>
                 
             <div className='input'>
                  <div className='icon'><FontAwesomeIcon icon={faLock} /></div>
                 <input type="password" placeholder='Password' 
                 value={password} 
-                onChange={(e)=> setPassword(e.target.value)} />
+                onChange={(e)=> setPassword(e.target.value)} 
+                autoComplete="new-password" // ✅ use "new-password" to avoid password autofill
+                />
             </div>
         </div>
 
           <div className='dont-have-account'>
            <p>Don't have an account? <span onClick={()=>navigate('/')}>Sign Up here!</span></p>
         </div>
-        
+
         <div className="submit-container">
             <button className='submit'>Login</button>
         </div>

@@ -110,6 +110,7 @@ const Signup = () => {
                 placeholder="Email Id"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                 autoComplete="off"   // ✅ disables browser autofill
               />
             </div>
             {errors.email && <div className="error">{errors.email}</div>}
@@ -138,6 +139,7 @@ const Signup = () => {
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                autoComplete="new-password" // ✅ use "new-password" to avoid password autofill
               />
             </div>
             {errors.password && <div className="error">{errors.password}</div>}
