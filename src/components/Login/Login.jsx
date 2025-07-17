@@ -40,10 +40,12 @@ const Login = () => {
   return (
     <div className='main-container'>
     <div className='login-container'>
+
         <div className='header'>
             <div className='text'>Login</div>
             <div className='underline'></div>
         </div>
+
         <form onSubmit={handleLogin}>
             <div className='inputs'>
             <div className='input'>
@@ -60,11 +62,11 @@ const Login = () => {
                 onChange={(e)=> setPassword(e.target.value)} />
             </div>
         </div>
-                <div className='dont-have-account'>
-          <p>
-            Don't have an account? <span onClick={()=>navigate('/')}>Sign Up here!</span>
-          </p>
+
+          <div className='dont-have-account'>
+           <p>Don't have an account? <span onClick={()=>navigate('/')}>Sign Up here!</span></p>
         </div>
+        
         <div className="submit-container">
             <button className='submit'>Login</button>
         </div>
