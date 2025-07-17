@@ -1,0 +1,84 @@
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container styling */
+.dashboard-container {
+  background: linear-gradient(to right, #f8f8f8, #e0e0ff);
+  padding: 40px;
+  width: 420px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header text */
+h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Game instruction */
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Input + Guess Button in one row */
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Input box */
+input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #6200ea;
+  box-shadow: 0 0 5px rgba(98, 0, 234, 0.4);
+}
+
+/* All buttons */
+button {
+  padding: 0.5rem 0.9rem;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4b00b3;
+}
+
+/* Game message */
+.message {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Group for logout button */
+.buttons {
+  margin-top: 20px;
+}
